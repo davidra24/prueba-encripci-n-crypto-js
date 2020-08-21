@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+      crossorigin="anonymous"
+    />
+    <title>Prueba</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-12 d-flex justify-content-center">
+          <div class="row">
+            <div class="col-12 d-flex justify-content-center">
+              <h1>Prueba de encripción</h1>
+            </div>
+            <div class="col-12 d-flex justify-content-between">
+              <label for="radio_encriptar">
+                Encriptar
+                <input type="radio" name="ecriptar" id="radio_encriptar" />
+              </label>
+              <label for="radio_desencriptar">
+                Desencriptar
+                <input type="radio" name="ecriptar" id="radio_desencriptar" />
+              </label>
+            </div>
+            <div class="col-12">
+              <div class="form-group">
+                <label for="cadena">Cadena</label>
+                <textarea
+                  type="text"
+                  id="cadena"
+                  class="form-control"
+                ></textarea>
+              </div>
+              <button class="btn btn-block btn-success" onclick="ejecutar()">
+                Ejecutar
+              </button>
+              <br />
+              <button class="btn btn-block btn-danger" onclick="limpiar()">
+                Limpiar
+              </button>
+              <br />
+              <textarea
+                type="text"
+                id="resultado"
+                class="form-control"
+              ></textarea>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.0.0/crypto-js.min.js"></script>
+    <script src="index.js"></script>
+  </body>
+</html>
